@@ -10,7 +10,7 @@ jobs:
     - checkout
     # start proprietary DB using private Docker image
     # with credentials stored in the UI
-    - run: docker-compose up --build 
+    - run: docker-compose up --build -d
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows

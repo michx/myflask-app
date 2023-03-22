@@ -12,7 +12,6 @@ workflows:
       machine:
         image: ubuntu-2204:2022.04.2
         steps:
-        - checkout
         # start proprietary DB using private Docker image
         # with credentials stored in the UI
         - run: docker-compose up --build 

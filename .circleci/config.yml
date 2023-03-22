@@ -44,4 +44,23 @@ workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
-      - build-and-test
+     build:
+      machine:
+       image: ubuntu-2204:2022.04.2
+         steps:
+          - checkout
+          # start proprietary DB using private Docker image
+          # with credentials stored in the UI
+          - run: |
+jobs:
+ build:
+   machine:
+    image: ubuntu-2204:2022.04.2
+   steps:
+     - checkout
+     # start proprietary DB using private Docker image
+     # with credentials stored in the UI
+     - run: |
+        docker-compose up --build 
+
+

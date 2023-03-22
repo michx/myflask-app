@@ -11,6 +11,7 @@ jobs:
     # start proprietary DB using private Docker image
     # with credentials stored in the UI
     - run: docker-compose up --build -d
+    - run: curl http://localhost:5085
     - store_test_results:
         path: test-results
 

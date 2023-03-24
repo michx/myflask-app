@@ -21,7 +21,8 @@ jobs:
       # replace with your preferred image
       - image: cimg/base:stable
     steps:
-      - gcp-cli/install
+      - gcp-cli/install:
+          components: kubectl
       - gcp-gke/rollout-image:
           container: webapp 
           deployment: flaskapp 

@@ -40,7 +40,8 @@ workflows:
     example-workflow:
       jobs:
       - gcp-gcr/build-and-push-image:
-          image: us-east1-docker.pkg.dev/mdidedda/flask-app/flaskapp 
+          image: us-east1-docker.pkg.dev/mdidedda/flask-app/flaskapp
+          registry-url: us-east1-docker.pkg.dev  
 
 
 

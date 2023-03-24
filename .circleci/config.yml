@@ -22,5 +22,5 @@ workflows:
     example-workflow:
       jobs:
         - gcp-gcr/build-and-push-image:
-            image: webapp1 
+            image: webapp2
 

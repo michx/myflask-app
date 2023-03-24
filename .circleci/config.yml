@@ -25,7 +25,6 @@ workflows:
         attach-workspace: false 
         gcloud-service-key: GCLOUD_SERVICE_KEY 
         google-compute-region: GOOGLE_COMPUTE_REGION 
-        google-compute-zone: GOOGLE_COMPUTE_ZONE 
         google-project-id: GOOGLE_PROJECT_ID 
         image: webapp 
 

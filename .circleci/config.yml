@@ -39,7 +39,8 @@ jobs:
 workflows:
     example-workflow:
       jobs:
-        - native
+      - gcp-gcr/build-and-push-image:
+          image: us-east1-docker.pkg.dev/mdidedda/flask-app/flaskapp 
 
 
 
